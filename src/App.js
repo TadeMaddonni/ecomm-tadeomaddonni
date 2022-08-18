@@ -1,12 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/header.jsx'
+import Navbar from './components/NavBar.jsx'
+import ItemListContainer from './components/ItemListContainer.jsx';
 import './App.css';
 
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Navbar />
+      <ItemListContainer />
     </div>
   );
 }

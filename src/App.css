@@ -86,6 +86,14 @@ button{
   background-color: #7B68EC;
   font-weight: 600;
 }
+.cartBtn{
+  display: flex;
+  align-items: center;
+}
+.cartIcon{
+  fill: #7B68EC;
+  padding-bottom: 3px;
+}
 
 .btn {
   color: #fff;
@@ -157,4 +165,18 @@ button{
   .navbar-toggler{
     margin-right: 15px !important;
   }
+}
+
+
+/* Item list container */
+
+.listContainer{
+  padding-left: 30px;
+  margin-top: 40px;
+}
+
+.listTitle{
+  font-weight: 700;
+  text-align: center;
+  color: #7B68EC;
 }

@@ -1,6 +1,8 @@
+import cartWidget from './CartWidget.jsx'
 import '../App.css';
+import CartWidget from './CartWidget.jsx';
 
-function Header () {
+function Navbar () {
 
     return(
             <nav className="navbar navbar-expand-lg bg-light">
@@ -21,7 +23,7 @@ function Header () {
                                 </li>
 
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a className="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Tienda
                                     </a>
                                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -35,8 +37,8 @@ function Header () {
                                 </li>
 
                                 <li className="nav-item">
-                                    <button type="button" className="no-btn nav-link">
-                                        Carrito
+                                    <button type="button" className="no-btn nav-link cartBtn">
+                                        <span>0</span><CartWidget />
                                     </button>
                                 </li>
                             </ul>
@@ -79,4 +81,4 @@ function Header () {
     )
 }
 
-export default Header;
+export default Navbar;
