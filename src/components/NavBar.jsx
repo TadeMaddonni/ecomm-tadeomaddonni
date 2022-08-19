@@ -1,4 +1,3 @@
-import cartWidget from './CartWidget.jsx'
 import '../App.css';
 import CartWidget from './CartWidget.jsx';
 
