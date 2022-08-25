@@ -1,9 +1,9 @@
 import { useState } from "react"
 
-const ItemCount= (props) => {
-        
-    const [count, setCount] = useState(props.initial)
-    const [stock, setStock] = useState(props.stock)
+const ItemCount= ({Stock, initial, OnAdd}) => {
+    console.log(Stock)
+    const [count, setCount] = useState(initial)
+    const [stock, setStock] = useState(Stock)
 
     const plusCount = () => {
         if(count === stock) {
@@ -14,7 +14,7 @@ const ItemCount= (props) => {
     }
 
     const minusCount = () => {
-        if(count === props.initial) {
+        if(count === initial) {
             setCount(1)
         }else if(count > stock){
             setCount(0)
