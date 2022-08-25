@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const ItemCount= ({Stock, initial, OnAdd}) => {
+const ItemCount= ({Stock, initial,}) => {
     console.log(Stock)
     const [count, setCount] = useState(initial)
     const [stock, setStock] = useState(Stock)
