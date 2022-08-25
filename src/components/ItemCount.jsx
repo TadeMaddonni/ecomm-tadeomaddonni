@@ -25,9 +25,17 @@ const ItemCount= ({Stock, initial,}) => {
     }
 
     const onAdd = () => {
-        alert(`Agregaste ${count} productos al carrito!`)
-        setStock (stock => stock - count)
-        setCount (1)
+
+        if(stock >= count){
+            alert(`Agregaste ${count} productos al carrito!`)
+            setStock (stock => stock - count)
+            setCount (1)
+        }else{
+            alert(`No es posible agregar el producto al carrito, no hay suficiente stock!`);
+            setCount (1)
+        }
+
+
     };
     return(
         <div className="itemContainer">
