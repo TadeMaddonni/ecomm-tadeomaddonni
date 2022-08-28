@@ -1,6 +1,6 @@
 import ItemCount from "./ItemCount";
 
-export default function (props ){
+export default function Item (props){
     return(
 
         <div className="aurisProduct">
