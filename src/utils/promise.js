@@ -6,8 +6,10 @@ let getData = (task) => {
     return new Promise((resolve, reject) => {
         if(is_ok){  
             setTimeout(
-                resolve(task)
-            , 2000)
+                () => {
+                    resolve(task)
+                }
+            , 1000)
         }else{
             reject("error")
         }

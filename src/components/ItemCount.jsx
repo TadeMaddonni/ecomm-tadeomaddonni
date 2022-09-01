@@ -1,8 +1,13 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 const ItemCount= ({Stock, initial,}) => {
-    const [count, setCount] = useState(initial)
-    const [stock, setStock] = useState(Stock)
+    const [count, setCount] = useState(1)
+    const [stock, setStock] = useState(1)
+    console.log(Stock)
+    useEffect (() => {
+        setCount(initial)
+        setStock(Stock)
+    }, [Stock, initial])
 
     const plusCount = () => {
         if(count === stock) {

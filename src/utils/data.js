@@ -6,7 +6,8 @@ const Data =[
         tipo:"auris",
         precio:12500,
         cantidad:1, 
-        stock:20
+        stock:20,
+        descripcion:" sadasd"    
     },
 
     {
@@ -17,6 +18,7 @@ const Data =[
         precio:14000,
         cantidad:1,
         stock:15,
+        descripcion:"Sonido virtual envolvente 7.1, caja de control de audio avanzada, carcasa de aluminio resistente, microfono desmontable con cancelación de ruido."
     
     },
     {
@@ -27,6 +29,7 @@ const Data =[
         precio: 12000,
         cantidad: 1,
         stock:20,
+        descripcion:" sadasd"
     },
 
     {
@@ -37,6 +40,7 @@ const Data =[
         precio: 12500,
         cantidad: 1,
         stock:20,
+        descripcion:" sadasd"
     },
 
     {
@@ -47,6 +51,7 @@ const Data =[
         precio: 17000,
         cantidad: 1,
         stock:20,
+        descripcion:" sadasd"
     },
 
     {
@@ -57,6 +62,7 @@ const Data =[
         precio: 20000,
         cantidad:1,
         stock:20,
+        descripcion:" sadasd"
     },
 
     {
@@ -67,6 +73,7 @@ const Data =[
         precio: 15500,
         cantidad:1,
         stock:20,
+        descripcion:" sadasd"
     },
 
     {
@@ -77,6 +84,7 @@ const Data =[
         precio:8500,
         cantidad:1,
         stock:20,
+        descripcion:" sadasd"
     },
 
     {
@@ -87,6 +95,7 @@ const Data =[
         precio: 8000,
         cantidad:1,
         stock:20,
+        descripcion:" sadasd"
     },
 
     {
@@ -97,6 +106,7 @@ const Data =[
         precio: 60500,
         cantidad:1,
         stock:20,
+        descripcion:" sadasd"
     },
 
     {
@@ -107,6 +117,7 @@ const Data =[
         precio: 169000,
         cantidad:1,
         stock:20,
+        descripcion:" sadasd"
     },
 
 
@@ -118,6 +129,7 @@ const Data =[
         precio: 120000,
         cantidad:1,
         stock:20,
+        descripcion:" sadasd"
     },
 
 
@@ -129,6 +141,7 @@ const Data =[
         precio:206500,
         cantidad:1,
         stock:20,
+        descripcion:" sadasd"
     },
 
     {
@@ -139,6 +152,7 @@ const Data =[
         precio: 169000,
         cantidad:1,
         stock:20,
+        descripcion:" sadasd"
     },
 
     {
@@ -149,6 +163,7 @@ const Data =[
         precio: 120000,
         cantida:1,
         stock:20,
+        descripcion:" sadasd"
     },
 
     {
@@ -159,6 +174,7 @@ const Data =[
         precio: 50000,
         cantidad:1,
         stock:20,
+        descripcion:" sadasd"
     },
 
     {
@@ -169,6 +185,7 @@ const Data =[
         precio:169000,
         cantidad:1,
         stock:20,
+        descripcion:" sadasd"
     },
 
     {
@@ -179,6 +196,7 @@ const Data =[
         precio:180000,
         cantidad:1,
         stock:20,
+        descripcion:" sadasd"
     
     }
 

@@ -331,3 +331,110 @@ button{
   font-size: 14px;
   font-weight: 500;
 }
+
+
+/* Individual pages */
+.mainProductPage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.productSection{
+  margin-bottom: 100px;
+  width: 45%;
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+  align-items: space-around;
+  justify-content: space-between;
+}
+
+.imgContainer{
+/*     box-shadow: 3px 3px 3px rgba(175, 174, 174, 0.493) */
+  box-shadow: 0px 2px 21px -4px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 2px 10px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 10px -4px rgba(0,0,0,0.75);
+  width: 50%;
+  height:330px;
+  border-radius: 7px;
+}
+.individualImg{
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+.infoContainer{
+  margin-top: 30px;
+  width: 80%;
+  height: 300px;
+}
+.productTitle{
+  font-size: 45px;
+  font-weight: 600;
+  color: #7B68EC;
+}
+
+.productPrice{
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #7B68EC;
+}
+
+
+.productDescription {
+  width: 70%;
+  color: #7B68EC;
+  font-weight: 500;
+}
+.buyTermsSection{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 60%;
+}
+
+.buyTerms{
+  font-size: 14px;
+  color: #7B68EC;
+}
+.buyTerms:hover{
+  font-weight: 600;
+  transition: .3s;
+  color: #7B68EC;
+}
+.buyTerms:visited{
+  color: #7B68EC;
+}
+
+.descriptionSection{
+  width: 60%;
+}
+
+.descriptionContainer{
+  display: flex;
+  gap: 5px;
+}
+
+.productEspDescription{
+  color: #7B68EC;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.addToCartSection{
+  display: flex;
+  gap: 5px;
+}
+.paymentMethodsSection{
+  display: flex;
+  gap: 10px;
+}
+.paymentMethods{
+  color: #7B68EC;
+  fill:#7B68EC;
+}
