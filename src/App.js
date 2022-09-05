@@ -4,6 +4,7 @@ import ItemListContainer from './components/ItemListContainer.jsx';
 import ItemDetailContainer from './components/itemDetail/ItemDetailContainer.jsx';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
+import Footer from './components/Footer.jsx';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/category/:id" element={<ItemListContainer greeting ="Tienda"/>} />
         <Route exact path="/item/:id" element={<ItemDetailContainer />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
