@@ -9,7 +9,7 @@ let getData = (task) => {
                 () => {
                     resolve(task)
                 }
-            , 1000)
+            , 0)
         }else{
             reject("error")
         }

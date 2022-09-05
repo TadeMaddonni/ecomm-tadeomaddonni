@@ -1,5 +1,5 @@
-import ItemCount from "./ItemCount";
 
+import {Link} from 'react-router-dom'
 export default function Item (props){
     return(
 
@@ -12,7 +12,7 @@ export default function Item (props){
             </div>
             <div className="priceSection">
                 <p className="aurisPrecio">${props.precio}</p>
-                <ItemCount Stock={props.stock} initial={props.initial} />
+                <Link to={`/item/${props.id}`}><button className="detailBtn">Ver detalles</button></Link>
             </div>
         </div>
     )
