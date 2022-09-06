@@ -6,7 +6,7 @@ const ItemDetail = ({item}) => {
 
         <div className="productSection">
             <div className="imgContainer">
-                <img className="individualImg" src={`/imgs/productos/${item.Img}`} alt=""/>
+                <img className="individualImg" src={item.Img} alt=""/>
             </div>
 
             <div className="infoContainer">

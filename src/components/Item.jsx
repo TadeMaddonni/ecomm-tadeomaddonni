@@ -5,7 +5,8 @@ export default function Item (props){
 
         <div className="aurisProduct">
             <div className="aurisImg">
-                <img src={`/imgs/productos/${props.img}`} alt="" />
+                    <img src={props.img} alt="ipad" border="0" />
+                {/* <img src="https://ibb.co/KsBQnCJ" alt="" /> */}
             </div>
             <div className="aurisTextContainer">
                 <p className="aurisDescription"> {props.name} </p>
