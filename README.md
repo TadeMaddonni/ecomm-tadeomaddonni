@@ -2,6 +2,8 @@
 
 <p> Realización de un catalogo de productos a traves de ReactJs, utilizacion de filtrado segun categoria y vista en detalle de cada producto</p>
 <p> Manejo del stock con ReactState (próximamente mejorado)</p>
+<p> Utilización de React-Router-DOM para la implementación de rutas </p>
+<p> Bootstrap para la nevagación y los iconos. </p>
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
