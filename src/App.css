@@ -512,3 +512,11 @@ button{
   font-weight: 600;
   transition: .3s;
 }
+
+.loader{
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  color: #7B68EC;
+  font-weight: 600;
+}

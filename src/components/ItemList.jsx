@@ -26,8 +26,9 @@ const ItemList = () => {
 
     return(
 
-        <div id="sectionProductos" className='animate__animated animate__fadeInLeft'>
-            {itemElements}
+        <div id="sectionProductos">
+            
+            {products.length > 0 ? itemElements : <p className='loader'>Cargando...</p>}       
         </div>
     )
 }

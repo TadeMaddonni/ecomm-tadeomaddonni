@@ -17,7 +17,10 @@ const ItemDetailContainer  = () => {
     
     return(
         <div className="mainProductPage">
-            <ItemDetail item={dato} />
+
+            {dato != {} ? <ItemDetail item={dato} /> :  <p className='loader'>Cargando...</p> }
+
+            {/* <ItemDetail item={dato} /> */}
         </div>
     )
 }
