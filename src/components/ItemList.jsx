@@ -20,7 +20,7 @@ const ItemList = () => {
     }, [id])
 
     const itemElements = products.map(product => {
-        return <Item key={product.id} img={product.Img} id={product.id} name={product.nombre} precio={product.precio} stock={product.stock} initial={product.cantidad} />
+        return <Item key={product.id} img={product.Img} id={product.id} name={product.name} precio={product.price} stock={product.stock} initial={product.quantity} />
     })
 
 

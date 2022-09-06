@@ -203,7 +203,7 @@ button{
 .item{
   display: flex;
   justify-content: center;
-  gap: 6px;
+  gap: 10px;
 }
 
 .btn-cant{
@@ -223,12 +223,14 @@ button{
 .itemCount{
   display: flex;
   align-items: center;
-  font-size: 12px;
+  font-size: 20px;
   color: #7B68EC;
   font-weight: 600;
 }
 
 .btnComprar{
+  margin-left: 5px;
+  margin-bottom: 4px;
   border: none;
   background-color: transparent; 
 }
@@ -236,7 +238,7 @@ button{
 
 .itemDescription{
   color: #7B68EC;
-  font-size: 11px;
+  font-size: 15px;
 }
 
 /* Items */

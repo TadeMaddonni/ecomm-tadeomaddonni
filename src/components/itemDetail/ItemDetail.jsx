@@ -10,13 +10,13 @@ const ItemDetail = ({item}) => {
             </div>
 
             <div className="infoContainer">
-                <h2 className="productTitle">{item.nombre}</h2>
-                <p className="productPrice">${item.precio}</p>
-                <p className="productDescription">{item.descripcion}</p>
+                <h2 className="productTitle">{item.name}</h2>
+                <p className="productPrice">${item.price}</p>
+                <p className="productDescription">{item.desc}</p>
                 <div className="paymentSection">
                     <div>
                         <div className="addToCartSection">
-                            <ItemCount Stock={item.stock} initial={item.cantidad} />
+                            <ItemCount Stock={item.stock} initial={item.quantity} />
                         </div>
                     </div>
                 </div>
