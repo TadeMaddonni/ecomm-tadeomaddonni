@@ -5,6 +5,13 @@
 <p> Utilización de React-Router-DOM para la implementación de rutas </p>
 <p> Bootstrap para la nevagación y los iconos. </p>
 
+<h1> Equipo de desarrollo </h1>
+<p> Tadeo Maddonni </p>
+
+<h2>Debajo las instrucciones de descarga y uso: </h2>
+<p> 1. Git clone </p> 
+<p> 1. npm install </p> 
+<p> 1. npm start </p> 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
