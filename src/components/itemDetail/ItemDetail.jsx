@@ -1,7 +1,27 @@
+import { useEffect } from 'react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import ItemCount from '../ItemCount';
 
 const ItemDetail = ({item}) => {
-    console.log(item.stock)
+    const [itemCount, setItemCount] = useState(1);
+    const [itemStock, setItemStock] = useState(1);
+    const [added, setAdded] = useState(false)
+    
+    useEffect(() =>{
+        setItemCount(item.quantity);
+        setItemStock(item.stock);
+
+    }, [item])
+
+
+
+    const onAdd = (stock, count) => {
+        alert(`Has agregado ${count > 1 ? `${count} productos` : `${count} producto` } al carrito`)
+        setItemStock(stock - count);
+        setAdded(true)
+    }
+
     return (
 
         <div className="productSection">
@@ -16,7 +36,14 @@ const ItemDetail = ({item}) => {
             <div className="paymentSection">
                 <div>
                     <div className="addToCartSection">
-                        <ItemCount Stock={item.stock} initial={item.quantity} />
+                        {
+                            added === false ? 
+                            <ItemCount Stock={itemStock} initial={itemCount} onAdd={onAdd}/> :
+                            <Link to="/cart" className='checkoutBtn noUnderline'>Finalizar compra</Link>
+                        }
+                    </div>
+                    <div>
+                    <p className="itemDescription">Disponibles: {itemStock}</p>
                     </div>
                 </div>
             </div>

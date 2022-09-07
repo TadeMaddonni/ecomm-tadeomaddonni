@@ -5,7 +5,7 @@ import ItemDetailContainer from './components/itemDetail/ItemDetailContainer.jsx
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer.jsx';
-import Cart from './components/Cart/cart.jsx';
+import Cart from './components/Cart/Cart.jsx';
 
 
 function App() {

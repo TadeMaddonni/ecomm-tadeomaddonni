@@ -2,14 +2,14 @@
 
 const is_ok = true; 
 
-let getData = (task) => {
+let getData = (task, time) => {
     return new Promise((resolve, reject) => {
         if(is_ok){  
             setTimeout(
                 () => {
                     resolve(task)
                 }
-            , 300)
+            , time)
         }else{
             reject("error")
         }

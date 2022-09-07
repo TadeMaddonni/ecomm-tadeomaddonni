@@ -237,6 +237,7 @@ button{
 
 
 .itemDescription{
+  margin-top: 20px;
   color: #7B68EC;
   font-size: 15px;
 }
@@ -519,4 +520,26 @@ button{
   text-align: center;
   color: #7B68EC;
   font-weight: 600;
+  align-self: center;
+  grid-column: 2/3;
+  height: 550px;
+}
+
+.noUnderline{
+  text-decoration: none;
+}
+
+
+
+.checkoutBtn{
+  text-decoration: none;
+  background-color: #7B68EC;
+  padding: 10px;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+}
+
+.checkoutBtn:hover{
+  color: white;
 }

@@ -25,22 +25,14 @@ function Navbar () {
                                     <Link className="nav-link" to="/category/2">Celulares</Link>
                                 </li>
 
-{/* 
-                                <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Tienda
-                                    </a>
-                                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a className="dropdown-item" href="pages/celus.html">Celulares</a></li>
-                                        <li><a className="dropdown-item" href="pages/auriculares.html">Auriculares</a></li>
-                                        <li><a className="dropdown-item" href="pages/tienda.html">Ver todo</a></li>
-                                    </ul>
-                                </li> */}
 
                                 <li className="nav-item">
-                                    <button type="button" className="no-btn nav-link cartBtn">
-                                        <span>0</span><CartWidget />
-                                    </button>
+                                    <Link to="/cart" className="noUnderline">
+                                        <button type="button" className="no-btn nav-link cartBtn">
+                                            <span>0</span><CartWidget />
+                                        </button>
+                                    </Link>
+
                                 </li>
 
 

@@ -11,10 +11,10 @@ const ItemList = () => {
 
     useEffect(() =>{
         if(id){
-            getData(Data.filter(prod => prod.categoryId === parseInt(id)))
+            getData(Data.filter(prod => prod.categoryId === parseInt(id)), 400)
             .then(res => setProducts(res));
         }else{
-            getData(Data)
+            getData(Data, 600)
             .then(res => setProducts(res));
         };
     }, [id])

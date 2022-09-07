@@ -11,14 +11,14 @@ const ItemDetailContainer  = () => {
     
     
     useEffect(() => {
-        getData(Data.find(item => item.id === parseInt(id)))
+        getData(Data.find(item => item.id === parseInt(id)), 1000)
         .then(res => setDato(res));
     }, [id])
     
     return(
         <div className="mainProductPage">
 
-            {dato != {} ? <ItemDetail item={dato} /> :  <p className='loader'>Cargando...</p> }
+            {dato.name ? <ItemDetail item={dato} /> :  <p className='loader'>Cargando...</p> }
 
             {/* <ItemDetail item={dato} /> */}
         </div>
