@@ -1,9 +1,6 @@
-
 import ItemList from "./ItemList";
 
 const ItemListContainer = (props) => {
-
-
     return(
         <div className="listContainer">
             <h1 className="listTitle">
@@ -13,5 +10,4 @@ const ItemListContainer = (props) => {
         </div>
     )
 }
-
 export default ItemListContainer;
