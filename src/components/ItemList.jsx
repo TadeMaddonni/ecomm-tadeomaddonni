@@ -10,36 +10,36 @@ const ItemList = () => {
 
     useEffect(() => {
         if (id) {
-        getData(
-            Data.filter((prod) => prod.categoryId === parseInt(id)),
-            400
-        ).then((res) => setProducts(res));
+            getData(
+                Data.filter((prod) => prod.categoryId === parseInt(id)),
+                400
+            ).then((res) => setProducts(res));
         } else {
-        getData(Data, 600).then((res) => setProducts(res));
+            getData(Data, 600).then((res) => setProducts(res));
         }
     }, [id]);
 
     const itemElements = products.map((product) => {
         return (
-        <Item
-            key={product.id}
-            img={product.Img}
-            id={product.id}
-            name={product.name}
-            precio={product.price}
-            stock={product.stock}
-            initial={product.quantity}
-        />
+            <Item
+                key={product.id}
+                img={product.Img}
+                id={product.id}
+                name={product.name}
+                precio={product.price}
+                stock={product.stock}
+                initial={product.quantity}
+            />
         );
     });
 
     return (
         <div id="sectionProductos">
-        {products.length > 0 ? (
-            itemElements
-        ) : (
-            <p className="loader">Cargando...</p>
-        )}
+            {products.length > 0 ? (
+                itemElements
+            ) : (
+                <p className="loader">Cargando...</p>
+            )}
         </div>
     );
 };
