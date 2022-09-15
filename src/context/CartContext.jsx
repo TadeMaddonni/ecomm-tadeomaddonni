@@ -18,6 +18,7 @@ const CartContextProvider = ({ children }) => {
 					console.log(el.stock);
 					if (el.id === item.id) {
 						if (el.quantity + qty > el.stock - 1) {
+							alert(`Lo sentimos, el maximo disponible para este producto es de ${el.stock}`)
 							return {
 								...el,
 								quantity: el.stock,

@@ -7,7 +7,8 @@ export default function CartWidget() {
 
     return (
 		<>
-			<span>{test.totalItems}</span>
+			{test.totalItems > 0 && <span>{test.totalItems}</span>}
+			
 			<svg
 				className="cartIcon"
 				xmlns="http://www.w3.org/2000/svg"

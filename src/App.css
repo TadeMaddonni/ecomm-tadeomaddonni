@@ -90,7 +90,8 @@ button {
 }
 .cartIcon {
 	fill: #7b68ec;
-	padding-bottom: 3px;
+	padding-bottom: 1px;
+	margin-top: 1px;
 }
 
 .btn {
@@ -534,6 +535,7 @@ button {
 .cartSection {
 	display: flex;
 	justify-content: center;
+	min-height: 75vh;
 }
 
 .cartContainer {
