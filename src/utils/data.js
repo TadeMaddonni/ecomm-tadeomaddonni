@@ -132,7 +132,7 @@ const Data =[
         desc:" sadasd"
     },
 
-
+            /* Hasta aca */
     {
         id: 13,
         name: "Samsung S 22 Ult Gen",
@@ -161,7 +161,7 @@ const Data =[
         Img:"https://i.ibb.co/pQgmgpF/xiaomi11.jpg",
         categoryId: 2,
         price: 120000,
-        cantida:1,
+        quantity:1,
         stock:20,
         desc:" sadasd"
     },

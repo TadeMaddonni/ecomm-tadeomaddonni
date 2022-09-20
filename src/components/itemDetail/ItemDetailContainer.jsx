@@ -1,8 +1,7 @@
 import ItemDetail from "./ItemDetail";
 import { useState, useEffect } from "react";
-import getData from "../../utils/promise";
-import Data from "../../utils/data";
 import { useParams } from "react-router-dom";
+import { getOneItem } from "../../utils/firebaseConfig";
 
 const ItemDetailContainer = () => {
     const [dato, setDato] = useState({});
@@ -10,10 +9,8 @@ const ItemDetailContainer = () => {
     const { id } = useParams();
 
     useEffect(() => {
-        getData(
-            Data.find((item) => item.id === parseInt(id)),
-            1000
-        ).then((res) => setDato(res));
+        getOneItem(id)
+        .then(res => setDato(res))
     }, [id]);
 
     return (

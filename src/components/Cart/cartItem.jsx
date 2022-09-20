@@ -7,7 +7,7 @@ const CartItem = (props) => {
 				<img className="cartProductImg" src={props.Img} alt="" />
 				<p className="cartProductName">{props.name}</p>
 				<span className="cartCant">{props.quantity}</span>
-				<span className="cartCant">${props.price} </span>
+				<span className="cartCant cadauno">${props.price} </span>
                 <span className="cartCant">${props.price * props.quantity}</span>
 				<button
 					className="cartCantBtn removeItem"

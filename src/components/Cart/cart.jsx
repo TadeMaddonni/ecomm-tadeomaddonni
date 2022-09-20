@@ -12,7 +12,7 @@ const Cart = () => {
 			<div key={el.id}>
 				<CartItem
 					id={el.id}
-					Img={el.Img}
+					Img={el.img}
 					name={el.name}
 					quantity={el.quantity}
 					price={el.price}
@@ -29,7 +29,7 @@ const Cart = () => {
 				<div className="cartTitlesContainer">
 					<h4 className="cartTitles">Producto</h4>
 					<h4 className="cartTitles">Cantidad</h4>
-					<h4 className="cartTitles">C/U</h4>
+					<h4 className="cartTitles cadauno">C/U</h4>
 					<h4 className="cartTitles">Total</h4>
 				</div>
 

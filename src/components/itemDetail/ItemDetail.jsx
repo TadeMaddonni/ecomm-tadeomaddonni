@@ -30,7 +30,7 @@ const ItemDetail = ({ item }) => {
     return (
         <div className="productSection">
             <div className="imgContainer">
-                <img className="individualImg" src={item.Img} alt="" />
+                <img className="individualImg" src={item.img} alt="" />
             </div>
 
             <div className="infoContainer">
