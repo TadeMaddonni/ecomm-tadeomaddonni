@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ecomm-tadeomaddonni/static/css/main.89f9a505.css",
+    "main.js": "/ecomm-tadeomaddonni/static/js/main.be371c78.js",
+    "index.html": "/ecomm-tadeomaddonni/index.html",
+    "main.89f9a505.css.map": "/ecomm-tadeomaddonni/static/css/main.89f9a505.css.map",
+    "main.be371c78.js.map": "/ecomm-tadeomaddonni/static/js/main.be371c78.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89f9a505.css",
+    "static/js/main.be371c78.js"
+  ]
+}
