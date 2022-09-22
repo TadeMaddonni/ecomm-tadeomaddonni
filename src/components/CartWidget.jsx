@@ -3,11 +3,11 @@ import { CartContext } from "../context/CartContext";
 
 export default function CartWidget() {
 
-    const test = useContext(CartContext)
+    const cart = useContext(CartContext)
 
     return (
 		<>
-			{test.totalItems > 0 && <span>{test.totalItems}</span>}
+			{cart.totalItems > 0 && <span>{cart.totalItems}</span>}
 			
 			<svg
 				className="cartIcon"

@@ -6,7 +6,7 @@ import { CartContext } from "../../context/CartContext";
 import ItemCount from "../ItemCount";
 
 const ItemDetail = ({ item }) => {
-    const test = useContext(CartContext);
+    const cart = useContext(CartContext);
     const [itemCount, setItemCount] = useState(1);
     const [itemStock, setItemStock] = useState(1);
     const [added, setAdded] = useState(false);
@@ -14,12 +14,12 @@ const ItemDetail = ({ item }) => {
     useEffect(() => {
         setItemCount(item.quantity);
         
-        if(test.cartList.find(prod => prod.id === item.id)){
-            setItemStock(test.countStock(item.id));
+        if(cart.cartList.find(prod => prod.id === item.id)){
+            setItemStock(cart.countStock(item.id));
         }else{
             setItemStock(item.stock)
         }
-    }, [item]);
+    }, [item, cart]);
 
     const onAdd = (stock, count) => {
         alert(
@@ -29,7 +29,7 @@ const ItemDetail = ({ item }) => {
         );
         setItemStock(stock - count);
         setAdded(true);
-        test.addItem(item, count);
+        cart.addItem(item, count);
     };
 
     return (

@@ -15,7 +15,7 @@ import { db } from "../../utils/firebaseConfig";
 import { useState } from "react";
 
 const Cart = () => {
-	const test = useContext(CartContext);
+	const cart = useContext(CartContext);
 	const [buyerData, setBuyerData] = useState({
 		name: "",
 		email: "",
@@ -25,7 +25,7 @@ const Cart = () => {
 
 	const createOrder = () => {
 		if (validData) {
-			let ItemsForDb = test.cartList.map((item) => {
+			let ItemsForDb = cart.cartList.map((item) => {
 				return {
 					id: item.id,
 					title: item.name,
@@ -43,7 +43,7 @@ const Cart = () => {
 
 				date: serverTimestamp(),
 				items: ItemsForDb,
-				total: test.TotalPrice,
+				total: cart.TotalPrice,
 			};
 
 			createOrderInFirestore(order)
@@ -51,13 +51,13 @@ const Cart = () => {
 					alert(`
 					${buyerData.name}, su orden ha sido creada correctamente, 
 					Bajo el identificador ${res.id}`);
-					test.cartList.forEach(async (item) => {
+					cart.cartList.forEach(async (item) => {
 						const itemRef = doc(db, "items", item.id);
 						await updateDoc(itemRef, {
 							stock: increment(-item.quantity),
 						});
 					});
-					test.clear();
+					cart.clear();
 				})
 				.catch((err) => console.error(err));
 		} else {
@@ -98,7 +98,7 @@ const Cart = () => {
 		}
 	};
 
-	const cartElements = test.cartList.map((el) => {
+	const cartElements = cart.cartList.map((el) => {
 		return (
 			<div key={el.id}>
 				<CartItem
@@ -107,7 +107,7 @@ const Cart = () => {
 					name={el.name}
 					quantity={el.quantity}
 					price={el.price}
-					removeItem={test.removeItem}
+					removeItem={cart.removeItem}
 				/>
 				<hr className="cartLines" />
 			</div>
@@ -124,7 +124,7 @@ const Cart = () => {
 					<h4 className="cartTitles">Total</h4>
 				</div>
 
-				{test.cartList.length > 0 ? (
+				{cart.cartList.length > 0 ? (
 					cartElements
 				) : (
 					<div className="emptyCartContainer">
@@ -135,15 +135,15 @@ const Cart = () => {
 					</div>
 				)}
 
-				{test.cartList.length > 0 && (
+				{cart.cartList.length > 0 && (
 					<>
 						<div className="cartBtnSection">
-							<button className="buyBtn" onClick={test.clear}>
+							<button className="buyBtn" onClick={cart.clear}>
 								Vaciar
 							</button>
 							<div className="totalSection">
 								<span className="cartCant">
-									Total: ${test.TotalPrice}
+									Total: ${cart.TotalPrice}
 								</span>
 								<button
 									className="buyBtn"
