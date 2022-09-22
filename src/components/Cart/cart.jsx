@@ -49,7 +49,7 @@ const Cart = () => {
 			createOrderInFirestore(order)
 				.then((res) => {
 					alert(`
-					Su orden ha sido creada correctamente, 
+					${buyerData.name}, su orden ha sido creada correctamente, 
 					Bajo el identificador ${res.id}`);
 					test.cartList.forEach(async (item) => {
 						const itemRef = doc(db, "items", item.id);
@@ -184,7 +184,6 @@ const Cart = () => {
 									placeholder="Ingrese su telefono"
 									required
 									onChange={handleChange}
-
 								/>
 							</form>
 							<button

@@ -4,7 +4,7 @@ import { createContext } from "react";
 export const CartContext = createContext();
 
 const CartContextProvider = ({ children }) => {
-    const [cartList, setCartList] = useState(
+	const [cartList, setCartList] = useState(
 		JSON.parse(localStorage.getItem("cart")) || []
 	);
 
@@ -24,7 +24,9 @@ const CartContextProvider = ({ children }) => {
 					console.log(el.stock);
 					if (el.id === item.id) {
 						if (el.quantity + qty > el.stock - 1) {
-							alert(`Lo sentimos, el maximo disponible para este producto es de ${el.stock}`)
+							alert(
+								`Lo sentimos, el maximo disponible para este producto es de ${el.stock}`
+							);
 							return {
 								...el,
 								quantity: el.stock,
@@ -69,20 +71,32 @@ const CartContextProvider = ({ children }) => {
 
 	const TotalPrice = totalPrice();
 
-		const countQuantity = () => {
-			return Math.round(
-				cartList.reduce(
-					(totalItems, item) =>
-						totalItems + item.quantity,
-					0
-				)
-			);
-		};
+	const countQuantity = () => {
+		return Math.round(
+			cartList.reduce((totalItems, item) => totalItems + item.quantity, 0)
+		);
+	};
 
 	const totalItems = countQuantity();
 
+	const countStock = (itemId) => {
+		const item = cartList.find((item) => item.id === itemId);
+		const newStock = item.stock - item.quantity;
+		return newStock;
+	};
+
 	return (
-		<CartContext.Provider value={{ cartList, addItem, removeItem, clear, TotalPrice, totalItems }}>
+		<CartContext.Provider
+			value={{
+				cartList,
+				addItem,
+				removeItem,
+				clear,
+				TotalPrice,
+				totalItems,
+				countStock,
+			}}
+		>
 			{children}
 		</CartContext.Provider>
 	);

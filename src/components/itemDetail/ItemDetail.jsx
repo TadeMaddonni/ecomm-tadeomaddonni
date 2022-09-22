@@ -13,7 +13,12 @@ const ItemDetail = ({ item }) => {
 
     useEffect(() => {
         setItemCount(item.quantity);
-        setItemStock(item.stock);
+        
+        if(test.cartList.find(prod => prod.id === item.id)){
+            setItemStock(test.countStock(item.id));
+        }else{
+            setItemStock(item.stock)
+        }
     }, [item]);
 
     const onAdd = (stock, count) => {
