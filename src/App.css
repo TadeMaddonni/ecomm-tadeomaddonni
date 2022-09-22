@@ -21,9 +21,7 @@ button {
 
 /* Real code */
 
-/* Header */
-
-/* Header */
+/* NavBar */
 .navbar {
 	background-color: #fff !important;
 	height: 70px;
@@ -713,26 +711,25 @@ button {
 	fill: white;
 }
 
-
-.buyFormContainer{
+.buyFormContainer {
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
 	margin-top: 20px;
 }
 
-.checkoutTitle{
+.checkoutTitle {
 	font-size: 16px;
 	color: white;
 	font-weight: 600;
 }
 
-.checkoutForm{
+.checkoutForm {
 	display: flex;
 	gap: 30px;
 }
 
-.checkoutForm > input{
+.checkoutForm > input {
 	padding: 5px 3px;
 	text-indent: 5px;
 	background-color: white;
@@ -742,13 +739,13 @@ button {
 	border-radius: 6px;
 }
 
-.checkoutForm > input::placeholder{
+.checkoutForm > input::placeholder {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
 	color: #7b68ec;
 }
 
-.checkoutBtnn{
+.checkoutBtnn {
 	font-size: 12px;
 	font-weight: 600;
 	padding: 4px 6px;
@@ -757,7 +754,6 @@ button {
 	border-radius: 4px;
 	background-color: white;
 	color: #7b68ec;
-
 }
 
 /* Mobile  */
@@ -919,7 +915,7 @@ button {
 		height: 550px;
 	}
 
-	.checkoutForm{
+	.checkoutForm {
 		flex-direction: column;
 	}
 }
