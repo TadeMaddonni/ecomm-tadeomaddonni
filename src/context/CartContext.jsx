@@ -1,10 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { createContext } from "react";
 
 export const CartContext = createContext();
 
 const CartContextProvider = ({ children }) => {
-	const [cartList, setCartList] = useState([]);
+    const [cartList, setCartList] = useState(
+		JSON.parse(localStorage.getItem("cart")) || []
+	);
+
+	useEffect(() => {
+		localStorage.setItem("cart", JSON.stringify(cartList));
+	}, [cartList]);
 
 	const isOnCart = (itemId) => {
 		const item = cartList.find((el) => el.id === itemId);

@@ -27,7 +27,6 @@ const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 
 export const firestoreFetch =  async(categoryId) => {
-    console.log(categoryId);
 	let q = query(collection(db, "items"));
 	if (categoryId) {
 		q = query(
@@ -44,7 +43,6 @@ export const firestoreFetch =  async(categoryId) => {
 			...doc.data(),
 		};
 	});
-    console.log(dataFromFirestore)
 	return dataFromFirestore;
 };
 
@@ -57,7 +55,6 @@ export const getOneItem = async (id) => {
             id : docSnap.id,
             ...docSnap.data()
         }
-        console.log(item);
         return item;
 
 	} else {
