@@ -53,7 +53,7 @@ const ItemDetail = ({ item }) => {
 								/>
 							) : (
 								<Link
-									to="/cart"
+									to="/ecomm-tadeomaddonni/cart"
 									className="checkoutBtn noUnderline"
 								>
 									Finalizar compra

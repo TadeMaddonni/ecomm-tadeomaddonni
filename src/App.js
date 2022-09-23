@@ -16,7 +16,7 @@ function App() {
 				<Routes>
 					<Route
 						exact
-						path="ecomm-tadeomaddonni/home"
+						path="ecomm-tadeomaddonni/"
 						element={<ItemListContainer greeting="Tienda" />}
 					/>
 					<Route
@@ -29,7 +29,7 @@ function App() {
 						path="ecomm-tadeomaddonni/item/:id"
 						element={<ItemDetailContainer />}
 					/>
-					<Route path="/cart" element={<Cart />} />
+					<Route path="ecomm-tadeomaddonni/cart" element={<Cart />} />
 				</Routes>
 				<Footer />
 			</BrowserRouter>

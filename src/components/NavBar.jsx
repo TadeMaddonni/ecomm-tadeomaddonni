@@ -7,7 +7,7 @@ function Navbar() {
 			<div className="container-fluid">
 				<Link
 					className="navbar-brand brandName"
-					to="ecomm-tadeomaddonni/home"
+					to="ecomm-tadeomaddonni/"
 				>
 					TecnoArg
 				</Link>
@@ -29,7 +29,7 @@ function Navbar() {
 					<ul className="navbar-nav me-auto mb-2 mb-lg-0">
 						<li className="nav-item">
 							<Link
-								to="ecomm-tadeomaddonni/home"
+								to="ecomm-tadeomaddonni/"
 								className="nav-link  links"
 							>
 								Inicio

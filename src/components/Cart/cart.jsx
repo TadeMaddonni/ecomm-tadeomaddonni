@@ -129,7 +129,7 @@ const Cart = () => {
 				) : (
 					<div className="emptyCartContainer">
 						<h1 className="cartTitle">El carrito esta vacio</h1>
-						<Link to="/ecomm-tadeomaddonni/home">
+						<Link to="/ecomm-tadeomaddonni/">
 							<button className="goBackBtn">Compremos!</button>
 						</Link>
 					</div>
