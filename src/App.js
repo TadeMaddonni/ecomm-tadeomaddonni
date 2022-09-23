@@ -16,17 +16,17 @@ function App() {
 				<Routes>
 					<Route
 						exact
-						path="/"
+						path="ecomm-tadeomaddonni/home"
 						element={<ItemListContainer greeting="Tienda" />}
 					/>
 					<Route
 						exact
-						path="/category/:id"
+						path="ecomm-tadeomaddonni/category/:id"
 						element={<ItemListContainer greeting="Tienda" />}
 					/>
 					<Route
 						exact
-						path="/item/:id"
+						path="ecomm-tadeomaddonni/item/:id"
 						element={<ItemDetailContainer />}
 					/>
 					<Route path="/cart" element={<Cart />} />

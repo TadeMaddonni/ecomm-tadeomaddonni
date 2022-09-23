@@ -5,7 +5,10 @@ function Navbar() {
 	return (
 		<nav className="navbar navbar-expand-lg bg-light">
 			<div className="container-fluid">
-				<Link className="navbar-brand brandName" to="/">
+				<Link
+					className="navbar-brand brandName"
+					to="ecomm-tadeomaddonni/home"
+				>
 					TecnoArg
 				</Link>
 				<button
@@ -25,31 +28,46 @@ function Navbar() {
 				>
 					<ul className="navbar-nav me-auto mb-2 mb-lg-0">
 						<li className="nav-item">
-							<Link to="/" className="nav-link  links">
+							<Link
+								to="ecomm-tadeomaddonni/home"
+								className="nav-link  links"
+							>
 								Inicio
 							</Link>
 						</li>
 
 						<li className="nav-item">
-							<Link to="/category/1" className="nav-link links">
+							<Link
+								to="ecomm-tadeomaddonni/category/1"
+								className="nav-link links"
+							>
 								Auriculares
 							</Link>
 						</li>
 
 						<li className="nav-item">
-							<Link className="nav-link" to="/category/2">
+							<Link
+								className="nav-link"
+								to="ecomm-tadeomaddonni/category/2"
+							>
 								Celulares
 							</Link>
 						</li>
 
 						<li className="nav-item">
-							<Link className="nav-link" to="/category/3">
+							<Link
+								className="nav-link"
+								to="ecomm-tadeomaddonni/category/3"
+							>
 								Relojes
 							</Link>
 						</li>
 
 						<li className="nav-item">
-							<Link to="/cart" className="noUnderline">
+							<Link
+								to="ecomm-tadeomaddonni/cart"
+								className="noUnderline"
+							>
 								<button
 									type="button"
 									className="no-btn nav-link cartBtn"
