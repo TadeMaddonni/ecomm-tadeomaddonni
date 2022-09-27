@@ -1,16 +1,16 @@
 import CartWidget from "./CartWidget.jsx";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
 	return (
 		<nav className="navbar navbar-expand-lg bg-light">
 			<div className="container-fluid">
-				<Link
+				<NavLink
 					className="navbar-brand brandName"
 					to="ecomm-tadeomaddonni/"
 				>
 					TecnoArg
-				</Link>
+				</NavLink>
 				<button
 					className="navbar-toggler"
 					type="button"
@@ -28,43 +28,43 @@ function Navbar() {
 				>
 					<ul className="navbar-nav me-auto mb-2 mb-lg-0">
 						<li className="nav-item">
-							<Link
+							<NavLink
 								to="ecomm-tadeomaddonni/"
 								className="nav-link  links"
 							>
 								Inicio
-							</Link>
+							</NavLink>
 						</li>
 
 						<li className="nav-item">
-							<Link
+							<NavLink
 								to="ecomm-tadeomaddonni/category/1"
 								className="nav-link links"
 							>
 								Auriculares
-							</Link>
+							</NavLink>
 						</li>
 
 						<li className="nav-item">
-							<Link
+							<NavLink
 								className="nav-link"
 								to="ecomm-tadeomaddonni/category/2"
 							>
 								Celulares
-							</Link>
+							</NavLink>
 						</li>
 
 						<li className="nav-item">
-							<Link
+							<NavLink
 								className="nav-link"
 								to="ecomm-tadeomaddonni/category/3"
 							>
 								Relojes
-							</Link>
+							</NavLink>
 						</li>
 
 						<li className="nav-item">
-							<Link
+							<NavLink
 								to="ecomm-tadeomaddonni/cart"
 								className="noUnderline"
 							>
@@ -74,7 +74,7 @@ function Navbar() {
 								>
 									<CartWidget />
 								</button>
-							</Link>
+							</NavLink>
 						</li>
 					</ul>
 					<div className="d-flex gap-3" role="search"></div>

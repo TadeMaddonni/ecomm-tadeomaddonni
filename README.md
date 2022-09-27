@@ -1,17 +1,51 @@
-<h1>TecnoArg</h1>
 
-<p> Realización de un catalogo de productos a traves de ReactJs, utilizacion de filtrado segun categoria y vista en detalle de cada producto</p>
-<p> Manejo del stock con ReactState (próximamente mejorado)</p>
-<p> Utilización de React-Router-DOM para la implementación de rutas </p>
-<p> Bootstrap para la nevagación y los iconos. </p>
+# Proyecto final ReactJs
 
-<h1> Equipo de desarrollo </h1>
-<p> Tadeo Maddonni </p>
+Creación de un simulador de un e-commerce para el curso de ReactJs en CoderHouse.
 
-<h2>Debajo las instrucciones de descarga y uso: </h2>
-<p> 1. Git clone </p> 
-<p> 1. npm install </p> 
-<p> 1. npm start </p> 
+Link del deploy: https://tademaddonni.github.io/ecomm-tadeomaddonni/
+
+| Color             | Codigo                                                              |
+| ----------------- | ------------------------------------------------------------------ |
+| Color principal| ![#7B68EC](https://via.placeholder.com/10/7B68EC?text=+) #7B68EC|
+| Color secundario | ![#fff](https://via.placeholder.com/10/fff?text=+) #fff|
+
+
+## 🛠 Tecnologias utilizadas
+    FIGMA para el diseño de wireframes y mockups
+
+    HTML para el maquetado y la estructuracion del sitio.
+
+    CSS para la implementacion de estilos en el mismo.
+
+    Animate.css para la implementación de animaciones.
+
+    BOOTSTRAP para la barra de navegación.
+
+    Javascript y ReactJs para la creación de componentes e interactividad con el usuario.
+
+    React hooks para el mantenimiento de estados locales y globalese interaccion con "side effects"
+
+    LocalStorage para el almacenamiento del carrito
+
+    SweetAlert para agregar comunicación directa al usuario
+
+    Firebase y Firestore data base para el almacenamiento de productos en base de datos.
+
+## Installation
+
+Inicializar el proyecto via npm
+
+```bash
+    git clone
+    cd the-clone
+    npm install 
+    npm start 
+```
+    
+## Developed by
+
+- [@TadeMaddonni](https://github.com/TadeMaddonni)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

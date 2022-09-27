@@ -331,6 +331,7 @@ button {
 .mainProductPage {
 	height: 700px;
 	display: flex;
+	width: 100vw;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -918,6 +919,19 @@ button {
 	.checkoutForm {
 		flex-direction: column;
 	}
+	.footerTextContainer {
+		width: 100%;
+	}
+	.footerListContainer {
+		display: none;
+	}
+	.footerList {
+		display: none;
+	}
+
+	.footerList li {
+		display: none;
+	}
 }
 
 /* Mobile  */
@@ -1093,4 +1107,32 @@ button {
 		grid-column: 1/4;
 		height: 550px;
 	}
+}
+
+.spinner {
+	border: 10px solid #f3f3f3;
+	border-top: 10px solid #7b68ec;
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.loaderContainer {
+	grid-column: 1/4;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }

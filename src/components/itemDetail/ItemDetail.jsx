@@ -4,35 +4,48 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 import ItemCount from "../ItemCount";
+import Swal from "sweetalert2";
 
 const ItemDetail = ({ item }) => {
-    const cart = useContext(CartContext);
-    const [itemCount, setItemCount] = useState(1);
-    const [itemStock, setItemStock] = useState(1);
-    const [added, setAdded] = useState(false);
+	const cart = useContext(CartContext);
+	const [itemCount, setItemCount] = useState(1);
+	const [itemStock, setItemStock] = useState(1);
+	const [added, setAdded] = useState(false);
 
-    useEffect(() => {
-        setItemCount(item.quantity);
-        
-        if(cart.cartList.find(prod => prod.id === item.id)){
-            setItemStock(cart.countStock(item.id));
-        }else{
-            setItemStock(item.stock)
-        }
-    }, [item, cart]);
+	useEffect(() => {
+		setItemCount(item.quantity);
 
-    const onAdd = (stock, count) => {
-        alert(
-            `Has agregado ${
-                count > 1 ? `${count} productos` : `${count} producto`
-            } al carrito`
-        );
-        setItemStock(stock - count);
-        setAdded(true);
-        cart.addItem(item, count);
-    };
+		if (cart.cartList.find((prod) => prod.id === item.id)) {
+			setItemStock(cart.countStock(item.id));
+		} else {
+			setItemStock(item.stock);
+		}
+	}, [item, cart]);
 
-    return (
+	const onAdd = (stock, count) => {
+		if (stock < 1) {
+			Swal.fire({
+				title: "Error!",
+				text: `No hay suficiente stock!`,
+				icon: "error",
+				confirmButtonText: "Volver",
+			});
+		} else {
+			Swal.fire({
+				title: "Genial!",
+				text: `Has agregado ${
+					count > 1 ? `${count} productos` : `${count} producto`
+				} al carrito`,
+				icon: "success",
+				confirmButtonText: "Continuar",
+			});
+			setItemStock(stock - count);
+			setAdded(true);
+			cart.addItem(item, count);
+		}
+	};
+
+	return (
 		<div className="productSection">
 			<div className="imgContainer">
 				<img className="individualImg" src={item.img} alt="" />

@@ -13,6 +13,7 @@ import {
 } from "firebase/firestore";
 import { db } from "../../utils/firebaseConfig";
 import { useState } from "react";
+import Swal from "sweetalert2";
 
 const Cart = () => {
 	const cart = useContext(CartContext);
@@ -48,9 +49,12 @@ const Cart = () => {
 
 			createOrderInFirestore(order)
 				.then((res) => {
-					alert(`
-					${buyerData.name}, su orden ha sido creada correctamente, 
-					Bajo el identificador ${res.id}`);
+					Swal.fire({
+						title: "Orden creada!",
+						text: `${buyerData.name}, su orden ha sido creada correctamente!. Puede seguirla bajo el siguiente indicador:  ${res.id}`,
+						icon: "success",
+						confirmButtonText: "Volver",
+					});
 					cart.cartList.forEach(async (item) => {
 						const itemRef = doc(db, "items", item.id);
 						await updateDoc(itemRef, {
@@ -61,9 +65,12 @@ const Cart = () => {
 				})
 				.catch((err) => console.error(err));
 		} else {
-			alert(
-				"No ha sido posible crear su orden, por favor asegurese de llenar los datos"
-			);
+			Swal.fire({
+				title: "Error",
+				text: `No ha sido posible crear su orden, asegurese de completar sus datos!`,
+				icon: "error",
+				confirmButtonText: "Reintentar",
+			});
 		}
 	};
 

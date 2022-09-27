@@ -3,19 +3,19 @@ import Item from "./Item";
 import { useParams } from "react-router-dom";
 
 import { firestoreFetch } from "../utils/firebaseConfig";
+import Spinner from "./Spinner";
 
 const ItemList = () => {
 	const [products, setProducts] = useState([]);
-	const { id } = useParams();
+	const { catId } = useParams();
 
 	useEffect(() => {
-		if (id) {
-			firestoreFetch(id)
-            .then(res => setProducts(res))
+		if (catId) {
+			firestoreFetch(catId).then((res) => setProducts(res));
 		} else {
 			firestoreFetch().then((res) => setProducts(res));
 		}
-	}, [id]);
+	}, [catId]);
 
 	const itemElements = products.map((product) => {
 		return (
@@ -36,7 +36,10 @@ const ItemList = () => {
 			{products.length > 0 ? (
 				itemElements
 			) : (
-				<p className="loader">Cargando...</p>
+				<div className="loaderContainer">
+					<Spinner />
+					<p className="loader">Cargando...</p>
+				</div>
 			)}
 		</div>
 	);
