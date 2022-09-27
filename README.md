@@ -29,7 +29,9 @@ Link del deploy: https://tademaddonni.github.io/ecomm-tadeomaddonni/
     LocalStorage para el almacenamiento del carrito
 
     SweetAlert para agregar comunicación directa al usuario
-
+    
+    React-router-DOM para el manejo de rutas dentro de la SPA
+    
     Firebase y Firestore data base para el almacenamiento de productos en base de datos.
 
 ## Installation
