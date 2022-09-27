@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/ecomm-tadeomaddonni/static/css/main.89f9a505.css",
-    "main.js": "/ecomm-tadeomaddonni/static/js/main.cf51a5ee.js",
+    "main.css": "/ecomm-tadeomaddonni/static/css/main.1e7114f3.css",
+    "main.js": "/ecomm-tadeomaddonni/static/js/main.1137cd9c.js",
     "index.html": "/ecomm-tadeomaddonni/index.html",
-    "main.89f9a505.css.map": "/ecomm-tadeomaddonni/static/css/main.89f9a505.css.map",
-    "main.cf51a5ee.js.map": "/ecomm-tadeomaddonni/static/js/main.cf51a5ee.js.map"
+    "main.1e7114f3.css.map": "/ecomm-tadeomaddonni/static/css/main.1e7114f3.css.map",
+    "main.1137cd9c.js.map": "/ecomm-tadeomaddonni/static/js/main.1137cd9c.js.map"
   },
   "entrypoints": [
-    "static/css/main.89f9a505.css",
-    "static/js/main.cf51a5ee.js"
+    "static/css/main.1e7114f3.css",
+    "static/js/main.1137cd9c.js"
   ]
 }
